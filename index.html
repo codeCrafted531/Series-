@@ -262,8 +262,7 @@
         }
 
         .sub-menu.show {
-            max-height: 300px;
-            /* Suficiente espacio para las opciones */
+            max-height: 300px; /* Suficiente espacio para las opciones */
             margin-bottom: 10px;
         }
 
@@ -471,13 +470,11 @@
         }
 
         .theme-toggle:hover {
-            background-color: #6a1a81;
-            /* Azul más oscuro al pasar el ratón */
+            background-color: #6a1a81; /* Azul más oscuro al pasar el ratón */
             transform: scale(1.05);
         }
         body.light .theme-toggle:hover {
-            background-color: #1a3a5a;
-            /* Morado más oscuro al pasar el ratón */
+            background-color: #1a3a5a; /* Morado más oscuro al pasar el ratón */
         }
 
         @media (max-width: 900px) {
@@ -579,6 +576,7 @@
 
             <section class="content">
                 <iframe id="tvframe" src="" allowfullscreen></iframe>
+          
                 <button class="btn" onclick="pantallaCompleta()">🎬 Modo Cine</button>
 
  
@@ -597,6 +595,7 @@
             "https://www.youtube.com/embed/Yjcw7_GolJo?autoplay=1", // Música
             "https://www.youtube.com/embed/1stpq3_DpWk?autoplay=1", // Vlog
             "https://www.youtube.com/embed/k1zdxiRPGIo?autoplay=1", // Documental corto
+         
             "https://www.youtube.com/embed/5P-3TH_tI8c?autoplay=1", // Tutorial
             "https://www.youtube.com/embed/x9LxDvsyCDw?autoplay=1", // Comedia
             "https://www.youtube.com/embed/Zxx3bCk0qOU?autoplay=1", // Animación
@@ -604,7 +603,6 @@
             "https://www.youtube.com/embed/uvwx123?autoplay=1", // Placeholder 1
             "https://www.youtube.com/embed/qrst789?autoplay=1"  // Placeholder 2
         ];
-        
         function getRandomVideoUrl() {
             const randomIndex = Math.floor(Math.random() * randomYouTubeVideos.length);
             return randomYouTubeVideos[randomIndex];
@@ -615,14 +613,17 @@
                 options: [
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
                 ],
+               
                 episodes: [
                     { title: "Sonic", url: "https://drive.google.com/file/d/18GWNjjuzhnNSqlAK8hRsXzGHYRa3zou_/preview" },
                     { title: "Episodio F2", url: "Aquí el enlace al video de Google Drive o similar" },
                     { title: "Episodio F3", url: "Aquí el enlace al video de Google Drive o similar" },
+   
                     { title: "Episodio F4", url: "Aquí el enlace al video de Google Drive o similar" }
                 ],
                 subOptionVideos: {
                     "Opción 1": [
+             
                         { title: "Video O1-1", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video O1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video O1-3", url: "Aquí el enlace al video de Google Drive o similar" }
@@ -631,6 +632,7 @@
             },
             "Acción": {
                 options: [
+                  
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
                 ],
                 episodes: [
@@ -648,10 +650,12 @@
             },
             "Drama": {
                 options: [
+              
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
                 ],
                 episodes: [
                     { title: "Episodio D1", url: "Aquí el enlace al video de Google Drive o similar" },
+                    
                     { title: "Episodio D2", url: "Aquí el enlace al video de Google Drive o similar" },
                 ],
                 subOptionVideos: {
@@ -659,34 +663,41 @@
                         { title: "Video DO1-1", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video DO1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video DO1-3", url: "Aquí el enlace al video de Google Drive o similar" }
+             
                     ]
                 }
             },
             "Romance": {
                 options: [
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
+         
                 ],
                 episodes: [
                     { title: "Episodio R1", url: "Aquí el enlace al video de Google Drive o similar" },
                     { title: "Episodio R2", url: "Aquí el enlace al video de Google Drive o similar" },
+      
                 ],
                 subOptionVideos: {
                     "Opción 1": [
                         { title: "Video RO1-1", url: "Aquí el enlace al video de Google Drive o similar" },
+            
                         { title: "Video RO1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video RO1-3", url: "Aquí el enlace al video de Google Drive o similar" }
                     ]
+              
                 }
             },
             "Animación": {
                 options: [
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
                 ],
+              
                 episodes: [
                     { title: "Episodio An1", url: "Aquí el enlace al video de Google Drive o similar" },
                 ],
                 subOptionVideos: {
                     "Opción 1": [
+       
                         { title: "Video AnO1-1", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video AnO1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video AnO1-3", url: "Aquí el enlace al video de Google Drive o similar" }
@@ -695,38 +706,44 @@
             },
             "Antiguas": {
                 options: [
+            
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
                 ],
                 episodes: [
                     { title: "Episodio At1", url: "Aquí el enlace al video de Google Drive o similar" },
+                  
                     { title: "Episodio At2", url: "Aquí el enlace al video de Google Drive o similar" }
                 ],
                 subOptionVideos: {
                     "Opción 1": [
-                        { title: "Video AtO1-1", url: "Aquí el enlace al video de Google Drive o similar" },
+                        { title: "Video AtO1-1", url: "https://drive.google.com/file/d/18Q2uOMkMgV-iMLlUIvJnjj8Q1jJ5a19Y/preview" },
                         { title: "Video AtO1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video AtO1-3", url: "Aquí el enlace al video de Google Drive o similar" }
+           
                     ]
                 }
             },
             "Actuales": {
                 options: [
                     { title: "Opción 1", fontClass: "sub-menu-option-1" }
+       
                 ],
                 episodes: [
                     { title: "Episodio Ac1", url: "Aquí el enlace al video de Google Drive o similar" },
                     { title: "Episodio Ac2", url: "Aquí el enlace al video de Google Drive o similar" }
+    
                 ],
                 subOptionVideos: {
                     "Opción 1": [
                         { title: "Video AcO1-1", url: "Aquí el enlace al video de Google Drive o similar" },
+          
                         { title: "Video AcO1-2", url: "Aquí el enlace al video de Google Drive o similar" },
                         { title: "Video AcO1-3", url: "Aquí el enlace al video de Google Drive o similar" }
                     ]
+            
                 }
             }
         };
-
         const loadingScreen = document.getElementById("loading-screen");
         const mainContent = document.getElementById("main-content");
         const seriesListElem = document.getElementById("seriesList");
@@ -737,7 +754,6 @@
         let currentSeries = null;
         let currentEpisodeIndex = null;
         let loadTimeout;
-        
         function showMainContent() {
             clearTimeout(loadTimeout);
             loadingScreen.style.opacity = '0';
@@ -755,7 +771,6 @@
         window.addEventListener('load', () => {
             loadTimeout = setTimeout(showMainContent, 2500);
         });
-
         function cargarSeries() {
             seriesListElem.innerHTML = "";
             Object.keys(seriesData).forEach(serie => {
@@ -764,11 +779,13 @@
                 btn.textContent = serie;
                 btn.className = "series-btn";
                 btn.onclick = (e) => {
+    
                     e.stopPropagation();
                     toggleSubMenu(serie);
                 };
                 
                 const arrow = document.createElement("span");
+             
                 arrow.className = "arrow";
                 arrow.innerHTML = "►";
                 btn.appendChild(arrow);
@@ -777,6 +794,7 @@
 
                 const subMenu = document.createElement("div");
                 subMenu.className = "sub-menu";
+        
                 subMenu.id = `sub-menu-${serie.replace(/\s+/g, '-')}`;
 
                 seriesData[serie].options.forEach(option => {
@@ -794,15 +812,16 @@
                     const videoSubMenu = document.createElement("div");
                     videoSubMenu.className = "video-sub-menu";
                     videoSubMenu.id = `video-sub-menu-${serie.replace(/\s+/g, '-')}-${option.title.replace(/\s+/g, '-')}`;
-
                     if (seriesData[serie].subOptionVideos && seriesData[serie].subOptionVideos[option.title]) {
                         seriesData[serie].subOptionVideos[option.title].forEach(video => {
                             const videoBtn = document.createElement("button");
                             videoBtn.textContent = video.title;
  
+        
                             videoBtn.onclick = (e) => {
                                 e.stopPropagation();
                                 cargarEpisodioURL(video.url, video.title);
+           
                             };
                             videoSubMenu.appendChild(videoBtn);
                         });
@@ -827,6 +846,7 @@
                     menu.classList.remove("show");
                     menu.previousElementSibling.classList.remove("active");
                     const videoSubMenus = menu.querySelectorAll(".video-sub-menu");
+               
                     videoSubMenus.forEach(vsm => vsm.classList.remove("show"));
                 }
             });
@@ -879,6 +899,7 @@
                 btn.className = "episode-btn";
                 btn.onclick = () => cargarEpisodio(idx);
                 
+ 
                 episodesListElem.appendChild(btn);
             });
             actualizarEpisodiosActivos();
